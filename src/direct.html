@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Krait demo: RGB</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/jumbotron-narrow.css" rel="stylesheet">
+
+    <link href="/css/direct.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome to Krait's RGB controller demo!</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-100p">
+          <textarea id="cmd-params" placeholder="enter parameters here"></textarea>
+          <div class="form-group" id="cmd-buttons">
+            <button id="cmd-btn-set" class="btn btn-default" type="submit">Set</button>
+            <button id="cmd-btn-fade1" class="btn btn-default" type="submit">Fade once</button>
+            <button id="cmd-btn-fade-rpt" class="btn btn-default" type="submit">Fade</button>
+            <button id="cmd-btn-fade-bpm" class="btn btn-default" type="submit">BPM</button>
+            
+            
+            <button id="cmd-btn-stop" class="btn btn-danger" type="submit">Stop</button>
+          </div>
+        </div>
+        <div class="col-xs-8">
+            <pre id="cmd-out"></pre>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>Made with raw hearts!</p>
+      </footer>
+    
+    </div> <!-- /container -->
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap-slider.min.js"></script>
+    <script src="/js/rgb-utils.js"></script>
+    <script src="/js/direct.js"></script>
+  </body>
+</html>

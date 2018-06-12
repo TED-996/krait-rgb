@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Krait demo: RGB</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/jumbotron-narrow.css" rel="stylesheet">
+
+    <link href="/css/index.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome to Krait's RGB controller demo!</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <form id="form-hsv">
+            <label for="input-h">Hue</label>
+            <span class="form-feedback pull-right" id="feedback-h"></span>
+            <input id="input-h" type="range" min="0" max="360">
+            <label for="input-s">Sat</label>
+            <span class="form-feedback pull-right" id="feedback-s"></span>
+            <input id="input-s" type="range" min="0" max="100">
+            <label for="input-v">Val</label>
+            <span class="form-feedback pull-right" id="feedback-v"></span>
+            <input id="input-v" type="range" min="0" max="100">
+
+            <div class="color-out" id="hsv-out">&nbsp;</div>
+
+            <input type="submit" class="form-control" value="Set">
+          </form>
+        </div>
+        <div class="col-xs-6">
+            <form id="form-rgb">
+              <label for="input-r">Red</label>
+              <span class="form-feedback pull-right" id="feedback-r"></span>
+              <input id="input-r" type="range" min="0" max="255">
+              <label for="input-g">Green</label>
+              <span class="form-feedback pull-right" id="feedback-g"></span>
+              <input id="input-g" type="range" min="0" max="255">
+              <label for="input-b">Blue</label>
+              <span class="form-feedback pull-right" id="feedback-b"></span>
+              <input id="input-b" type="range" min="0" max="255">
+
+              <div class="color-out" id="rgb-out">&nbsp;</div>
+
+              <input type="submit" class="form-control" value="Set">
+            </form>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>Made with raw hearts!</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap-slider.min.js"></script>
+    <script src="/js/rgb-utils.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

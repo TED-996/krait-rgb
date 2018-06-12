@@ -1,0 +1,15 @@
+#cmd-params {
+    display: block;
+    width: 100%;
+    font-family: monospace, monospace;
+}
+
+#cmd-buttons {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#cmd-out {
+    max-height: 15em;
+    overflow: scroll;
+}

@@ -1,0 +1,19 @@
+#music-visualizer {
+	display: block;
+	height: 100%;
+	width: 100%;
+
+	border: 1px solid black;
+}
+
+.h-100p {
+	height: 100%;
+}
+
+#main-row {
+	height: 18em;
+}
+
+#cmd-out {
+	height: calc(100% - 11em);
+}

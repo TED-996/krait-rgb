@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Krait demo: RGB</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/jumbotron-narrow.css" rel="stylesheet">
+
+    <link href="/css/music.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome to Krait's RGB controller demo!</h1>
+      </div>
+
+      <div class="row" id="main-row">
+        <div class="col-xs-5 h-100p">
+          <div class="form-group">
+            <label for="music-file-input">Enter file to play</label>
+            <input type="file" id="music-file-input">
+          </div>
+          <div class="form-group">
+            <button id="music-btn-play" class="btn btn-primary" type="button">Play</button>
+            <button id="music-btn-pause" class="btn btn-default" type="button">Pause</button>
+            <button id="music-btn-stop" class="btn btn-danger" type="button">Stop</button>
+          </div>
+          <p>
+            <span id="music-status-main">Waiting;</span>
+            &nbsp;
+            <span id="music-status-time">0:00</span>
+            /
+            <span id="music-status-total">0:00</span>
+          </p>
+
+          <pre id="cmd-out"></pre>
+        </div>
+        <div class="col-xs-7 h-100p">
+            <canvas id="music-visualizer"></canvas>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>Made with raw hearts!</p>
+      </footer>
+    
+    </div> <!-- /container -->
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap-slider.min.js"></script>
+    <script src="/js/es6-promise.min.js"></script>
+    <script src="/js/rgb-utils.js"></script>
+    <script src="/js/music.js"></script>
+  </body>
+</html>
