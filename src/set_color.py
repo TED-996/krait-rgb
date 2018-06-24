@@ -9,7 +9,7 @@ def main():
     if color is None:
         return krait.ResponseBadRequest()
 
-    rgb_utils.set_color(color)
+    rgb_utils.raw_set_color(color)
 
 
 krait.response = main()

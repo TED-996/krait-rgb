@@ -1,9 +1,4 @@
-import time
-import random
-import string
-
 from krait import websockets
-
 from rgb import rgb_utils
 
 
